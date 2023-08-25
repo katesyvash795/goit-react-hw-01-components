@@ -1,15 +1,28 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-import {DivProfile,Avatar,Description,Text,ListStats,Items,Label} from './profile.styled'
+import {
+  DivProfile,
+  Avatar,
+  Description,
+  Text,
+  ListStats,
+  Items,
+  Label,
+} from './Profile.styled';
+
 const Profile = ({ username, tag, location, avatar, stats }) => {
   return (
     <DivProfile className="profile">
       <Description className="description">
         <Avatar src={avatar} alt="User avatar" className="avatar" />
         <Text className="name">{username}</Text>
-        <Text color="gray" className="tag">@{tag}</Text>
-        <Text  color="gray" className="location">{location}</Text>
+        <Text color="gray" className="tag">
+          @{tag}
+        </Text>
+        <Text color="gray" className="location">
+          {location}
+        </Text>
       </Description>
 
       <ListStats className="stats">
@@ -29,6 +42,7 @@ const Profile = ({ username, tag, location, avatar, stats }) => {
     </DivProfile>
   );
 };
+
 Profile.propTypes = {
   username: PropTypes.string.isRequired,
   tag: PropTypes.string.isRequired,
@@ -40,4 +54,5 @@ Profile.propTypes = {
     likes: PropTypes.number.isRequired,
   }).isRequired,
 };
+
 export default Profile;

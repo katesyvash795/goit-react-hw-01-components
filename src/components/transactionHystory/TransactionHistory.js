@@ -2,6 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 
 import {Table,TableHeader,TableRow,TableCell} from './TransactionHystory.styled';
+
 const TransactionHistory = ({ items }) => {
   return (
     <Table className="transaction-history">
@@ -24,6 +25,7 @@ const TransactionHistory = ({ items }) => {
   </Table>
 );
 };
+
 TransactionHistory.propTypes = {
     items: PropTypes.arrayOf(
       PropTypes.shape({
@@ -34,4 +36,5 @@ TransactionHistory.propTypes = {
       })
     ).isRequired,
   };
+
 export default TransactionHistory;

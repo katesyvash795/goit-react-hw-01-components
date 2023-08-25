@@ -1,11 +1,10 @@
 import styled from 'styled-components';
 
-
- export const FriendListItemContainer = styled.li`
+export const FriendListItemContainer = styled.li`
   display: flex;
   align-items: center;
   margin-bottom: 10px;
-  Width:300px;
+  width: 300px;
   padding: 5px;
   border: 1px solid #ccc;
 `;
@@ -16,7 +15,7 @@ export const StatusIndicator = styled.span`
   height: 10px;
   border-radius: 50%;
   margin-right: 10px;
-  background-color:${props => (props.$is_online ? 'green' : 'red')};
+  background-color: ${props => (props.$is_online ? 'green' : 'red')};
 `;
 
 export const Avatar = styled.img`
