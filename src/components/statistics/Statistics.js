@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-import {Title, Section,List,Item} from './Statistics.styled'
+import {Title, Section,List,Item} from './Statistics.styled.js'
 
 const Statistics = ({ title, stats }) => {
     return (

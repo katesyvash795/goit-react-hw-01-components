@@ -2,7 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 
 import FriendListItem from '../FriendsListItem/FriendListItem';
-import { FriendListContainer } from './FriendList.styled';
+import { FriendListContainer } from './FriendList.styled.js';
 const FriendList = ({ friends }) => {
   return (
     <FriendListContainer>
